@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notice_posts",
+  "info": {
+    "singularName": "notice-post",
+    "pluralName": "notice-posts",
+    "displayName": "NoticePost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "notice": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::notice.notice",
+      "inversedBy": "notice_posts"
+    }
+  }
+}

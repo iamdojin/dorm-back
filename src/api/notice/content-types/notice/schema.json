@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notices",
+  "info": {
+    "singularName": "notice",
+    "pluralName": "notices",
+    "displayName": "Notice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notice_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::notice-post.notice-post",
+      "mappedBy": "notice"
+    }
+  }
+}
