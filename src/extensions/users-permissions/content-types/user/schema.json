@@ -68,6 +68,15 @@
       "relation": "manyToMany",
       "target": "api::chat.chat",
       "mappedBy": "users"
+    },
+    "status": {
+      "type": "string"
+    },
+    "room": {
+      "type": "string"
+    },
+    "socketid": {
+      "type": "integer"
     }
   }
 }

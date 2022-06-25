@@ -12,8 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "content": {
+      "type": "text"
     },
     "posts": {
       "type": "relation",
